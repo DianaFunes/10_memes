@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="css/estilos.css">
+      <title>MEMES</title>
+      <link rel="icon" href="imgs/icon.png" sizes="50x50">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Climate+Crisis&family=Tilt+Neon&display=swap" rel="stylesheet">
+      
+    </head>
+
+<body>
+      <header class="row ">
+        <!--NAVBAR-->
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top justify-content-center">
+      
+          <a href="" class="navbar-brand col">
+          <img src="imgs/icon.png" alt="IconDD" id="imgIcon" width="50px"></img>
+          <span id="menuDiana">Dianis Desing</span>
+        </a>  
+      </nav>
+    </header>  <!--TODO-->
+    <section class="row">
+  <!--AJUSTES-->
+<section id="izq" class="col-6">
+    <!--TITULOS-->
+ <section class="row">
+  <h2 id="titulo01" class="d-flex justify-content-center">Crea tu meme de harry c:</h2>
+  </section>
+
+<!--COLOR-->
+  <section class="row" id="colores" >
+    <section>
+        <h3 class="d-flex justify-content-center">Elige un color </h3>
+        <input type="button" class="botonColor" id="btn01" onclick="color01()">
+        <input type="button" class="botonColor" id="btn02" onclick="color02()">
+        <input type="button" class="botonColor" id="btn03" onclick="color03()">
+        <input type="button" class="botonColor" id="btn04" onclick="color04()">
+    </section>
+  </section>
+<!--IMAGEN-->
+
+  <article id="personajes">
+    <h3 class="d-flex justify-content-center">Elige una imagen</h3>
+        <img class="foto" onclick="cambiarImagen('imgs/me01.jpg')" src="imgs/me01.jpg" alt="">
+        <img class="foto" onclick="cambiarImagen('imgs/me02.jpg')"src="imgs/me02.jpg" alt="">
+        <img class="foto" onclick="cambiarImagen('imgs/me03.jpg')" src="imgs/me03.jpg" alt="">
+  </article>
+<br>
+<!--TEXTO-->
+
+    <h3 class="d-flex justify-content-center">Agrega un texto a la imagen</h3>
+      <input type="button" id="boton" class="btn btn-light d-grid gap-2 col-2 mx-auto" value="Agregar texto" onclick="openModal()">
+
+    <section class="ventana" id="ventana">
+      <section class="contenidoVentana">
+        <h2>Escribe lo que dira la imagen</h2>
+          <label for="mensaje02">Texto:</label>
+            <textarea id="mensaje02"></textarea>
+            <label for="nombre02">Nombre:</label>
+            <input type="text" id="nombre02">
+              <input type="button" onclick="guardar()" value="Guardar">
+              <input type="button" onclick="closeModal()" value="Cancelar">
+      </section>
+    </section>
+    <br>
+<!--BOTONES-->
+
+  <section class="row">
+    <section id="mover" class="col align-self-center">
+      <h3 class="d-flex justify-content-center">Mueve tu texto</h3>
+        <section class="row">
+          <input type="button" class="btn btn-light col-3 mx-auto" value="Arriba" onclick="arriba()">
+          <input type="button" class="btn btn-light col-3 mx-auto"  value="Abajo" onclick="abajo()">
+        </section>
+        <section class="row">
+          <input type="button" class="btn btn-light col-3 mx-auto"  value="Izquierda" onclick="izquierda()">
+          <input type="button" class="btn btn-light col-3 mx-auto"  value="Derecha" onclick="derecha()">
+        </section>
+    </section>
+
+    <section id="letraTipo" class="col align-self-center">
+      <h3 class=" row d-flex justify-content-center">Escoge una tipografia</h3>
+        <input type="button" class="btn btn-light col-3 mx-auto"  value="Abril" onclick="cambiarTipo('abril')">
+        <input type="button" class="btn btn-light col-3 mx-auto"  value="climate" onclick="cambiarTipo('climate')">
+        <input type="button" class="btn btn-light col-3 mx-auto"  value="neon" onclick="cambiarTipo('neon')">
+    </section>
+  </section>
+
+  <!--BOTONES 02-->
+  <section class="row">
+    <section id="letraColor" class="col align-self-center">
+      <h3 class="d-flex justify-content-center">Cabia el color</h3>
+      <section class="row">
+        <input type="button" class="btn col-3 mx-auto" id="color01">
+        <input type="button" class="btn col-3 mx-auto" id="color02">
+      </section>
+      <section class="row">
+        <input type="button" class="btn col-3 mx-auto" id="color03">
+        <input type="button" class="btn col-3 mx-auto" id="color04">
+      </section>
+    </section>
+
+    <section id="letraSize" class="col align-self-center">
+      <h3 class="d-flex justify-content-center">Cambia el size</h3>
+      <section class="row">
+        <input type="button" class="btn col-4 btn-light mx-auto" id="aumentar" value="mas size">
+        <input type="button" class="btn col-4 btn-light mx-auto" id="disminuir" value="menos size">
+      </section>
+    </section>
+</section>
+
+</section>
+
+<!--IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII-->
+<section id="der" class="col">
+
+  <section id="tarjetaT" >
+    <figure>
+      <img id="imagen" class="rounded" src="imgs/tarjeta.png" alt="">
+  </figure>
+   <section id="textos">
+    <p id="mensaje" class="text-center">la jarra</p>
+    <h2 id="nombre">Dianis</h2>
+    </section>
+
+    </section>
+  </section>
+
+
+</section>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>

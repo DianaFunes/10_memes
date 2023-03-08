@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+  }
+  html{
+    font-family: 'Paytone One', monospace;
+  }
+
+#izq{
+    background-color: #83a3f2;
+    height: auto;
+  }
+#nombre{
+  margin-top: 550px;
+  margin-left: -190px;
+}
+#menuDiana{
+  margin-left: 20px;
+  font-family: 'Paytone One', monospace;
+  font-size:1em;
+  color:#ffffff;
+  position: relative;
+}
+/*--------------------------------*/
+.botonColor{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  margin-top: 30px;
+  margin-left: 50px;
+  display: inline-block;
+}
+#colores{
+  position: absolute;
+  width: 500px;
+  height: 30px;
+  background-color: #ffffff06;
+  margin-top: 10px;
+  margin-left: 170px;
+}
+#btn01{
+  background-color: #6bb3b3;
+}
+
+#btn02{
+  background-color: #9999ff;
+}
+#btn03{
+  background-color: #ff9cb1;
+}
+#btn04{
+  background-color: #e9ca19;
+}
+.ligero{
+  color: #390866;
+  font-family: Papyrus;
+}
+/*--------------------------------*/
+#imagen{
+  height: 500px;
+  width: auto;
+  margin-top: 100px;
+  margin-left: 90px;
+}
+/*--------------------------------*/
+figure{
+  position: relative;
+  top: 120 px;
+  text-align: center;
+  width: 30%;
+  margin: 0 auto;
+}
+/*--------------------------------*/
+#personaje{
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 110px;
+  height: 110px;
+  background-color: rgba(255, 255, 255, 0.164);
+  text-align: center;
+}
+#personajes{
+  margin-top: 150px;
+  margin-left: 80px;
+}
+/*--------------------------------*/
+#tarjeta{
+  height: 550px;
+  width: auto;
+  margin-top: 100px;
+  margin-bottom: 30px;
+  }
+  #tarjetaT{
+    position: relative;
+  display: inline-block;
+  }
+  #textos{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  }
+.ventana {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+}
+.contenidoVentana {
+  background-color: white;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+.contenidoVentana h2 {
+  margin-top: 0;
+}
+.contenidoVentana label {
+  display: block;
+  margin-bottom: 5px;
+}
+.contenidoVentana input, .contenidoVentana textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+.contenidoVentana button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+#titulo01{
+  margin-top: 100px;
+}
+#titulo02{
+  margin-top: 30px;
+}
+#mensaje{
+  position: absolute;
+
+  flex-direction: row;
+ /* align-items: center;
+  justify-content: center;*/
+}
+/*--------------------------------*/
+.btn{
+ margin: 10px;
+}
+#color01{
+ background-color: #425fd1; 
+}
+#color02{
+  background-color: #aa00ff; 
+ }
+ #color03{
+  background-color: #ff0072; 
+ }
+ #color04{
+  background-color: #7addc3; 
+ }
+/*--------------------------------*/
+.abril {
+  font-family: 'Abril Fatface', cursive;
+}
+.climate {
+  font-family: 'Climate Crisis', cursive;
+}
+.neon{
+font-family: 'Tilt Neon', cursive;
+}
